@@ -1,0 +1,154 @@
+/* Minimalist Modern UI for Laravel App */
+
+body {
+    font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #1e40af;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6em 1.4em;
+    border: 2px solid #2563eb;
+    background: transparent;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.04);
+}
+.btn:hover, .btn:focus {
+    background: transparent;
+    color: #1e40af;
+    border-color: #1e40af;
+    box-shadow: 0 6px 24px rgba(37,99,235,0.18);
+}
+
+form {
+    margin: 2em 0;
+}
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 0.7em 1em;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 7px;
+    background: #f9fafb;
+    margin-bottom: 1.2em;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+th, td {
+    padding: 0.9em 1em;
+    text-align: left;
+}
+th {
+    background: #f1f5f9;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+}
+td {
+    border-bottom: 1px solid #f1f5f9;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Subtle card effect for sections */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2em 1.5em;
+    margin-bottom: 2em;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2em 1em;
+    width: 220px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sidebar a {
+    display: block;
+    color: #2563eb;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s, box-shadow 0.2s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background: #fff;
+    color: #1e40af;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+}
+
+/* Ensure all cards/boxes are rounded */
+.card, .container, table, input, select, textarea, form, .btn {
+    border-radius: 12px !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .container, .card {
+        padding: 1em;
+    }
+    th, td {
+        padding: 0.6em 0.5em;
+    }
+}
